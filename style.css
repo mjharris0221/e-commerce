@@ -68,7 +68,7 @@ header{
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    min-height: 8vh;
+    height: 100%;
     color: black;
     flex-direction: column;
     margin: 0 auto;
@@ -135,5 +135,28 @@ img{
  }
  .highlight{
     padding: 0 24px;
-    width: calc(100%/ 3) 
+    width: calc(100%/ 3);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+.highlight__para{
+    text-align: center;
+}
+.highlight__img{
+    border: 2px solid #7342d6;        
+    width: 100px;
+    height: 100px;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 32px;
+
+} 
+.hightlight__subtitle{
+    font-size: 20px;
+    color: #020005;
+    margin-bottom: 16px;
 }
