@@ -78,7 +78,9 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+}
+.header__img--wrapper{
+    padding: 20px;
 }
 h1{
     font-size: 56px;
@@ -131,7 +133,6 @@ img{
 /*highlights */
  .highlight__wrapper{
     display: flex;
-    justify-content: space-between;
  }
  .highlight{
     padding: 0 24px;
@@ -143,11 +144,25 @@ img{
 }
 .highlight__para{
     text-align: center;
+    max-width: 280px;
+}
+#highlights:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 101vh;
+    height: 12vw;
+    background: url(assests/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-100%); 
 }
 .highlight__img{
-    border: 2px solid #7342d6;        
+    border: 2px solid #996af7;
+    color: #7342d6;        
     width: 100px;
     height: 100px;
+    display: flex;
     margin-bottom: 24px;
     align-items: center;
     justify-content: center;
@@ -155,8 +170,15 @@ img{
     font-size: 32px;
 
 } 
-.hightlight__subtitle{
+.highlight__subtitle{
     font-size: 20px;
     color: #020005;
     margin-bottom: 16px;
+    text-align: center;
+}
+.section__title{
+    font-size: 32px;
+    color: #020005;
+    margin-bottom: 24px;
+    text-align: center;
 }
