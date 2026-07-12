@@ -60,7 +60,60 @@ border-radius: 4px;
 .nav__links--primary:hover{
    text-decoration: none;
 }
-.landding{
+/* Hambuger Menu*/
+.btn__menu{
+    background-color: transparent;
+    font-size: 40px;
+    border: none;
+    color:#7342d6;
+    display: none;
+}
+.menu__backdrop{
+position: absolute;
+background-color: #242424;
+top:0;
+left:0;
+right:0;
+bottom: 0;
+z-index: 100;
+display: flex;
+align-items: center;
+justify-content: center;
+  visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
+  transform: translate(100%);
+}
+.menu--open{
+    max-height:100vh;
+    overflow: hidden;
+}
+.menu--open .menu__background{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
+}
+.menu__links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu__list{
+    padding: 32px;
+}
+.menu__link{
+    color: white;
+    font-size: 40px;
+}.btn__menu--close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 8px;
+    color: white;
+}
+/*LANDING */
+
+#landing{
     background-color: rgba(115, 66, 214, 0.1)
 }
 header{
@@ -149,6 +202,7 @@ img{
 /*highlights */
  .highlight__wrapper{
     display: flex;
+    flex-wrap: wrap;
  }
  .highlight{
     padding: 0 24px;
@@ -294,4 +348,40 @@ footer{
     padding: 0 8px;
     color: white;
 }
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px){
+    .header__description{
+        padding: 0 24px;
+    }
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 26px;
+}
+button{
+    font-size: 18px;
+}
+.book{
+    width: 50%;
+}
+}
 
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+  .btn__menu {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .highlight {
+    width: 100%;
+  }
+
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
