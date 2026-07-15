@@ -88,7 +88,7 @@ justify-content: center;
     max-height:100vh;
     overflow: hidden;
 }
-.menu--open .menu__background{
+.menu--open .menu__backdrop{
     visibility: visible;
     opacity: 1;
     transform: translate(0);
