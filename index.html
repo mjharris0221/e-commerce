@@ -7,7 +7,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b4a5e24752.js" crossorigin="anonymous"></script>
-
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -18,17 +18,16 @@
                 <ul class="nav__links">
                     <li><a href="#" class="nav__links">Home</a></li>
                     <li><a href="#" class="nav__links">Contacts</a></li>
-                    <li><a href="#" class="nav__links">Books</a></li>
+                    <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
                 </ul>
-                <button clas="btn__menu" onclick="OpenMenue()">
+                <button class="btn__menu" onclick="openMenu()">
                 <i class="fas fa-bars"></i>
             </button>
         <div class="menu__backdrop">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-             <i class="fas fa-times"></i>   
+              <i class="fas fa-times"></i>  
             </button>
             <ul class="menu__links">
-                <li>
                    <li class="menu__list">
               <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
             </li>
@@ -46,7 +45,7 @@
         <header class="header__container">
             <div class="header__description">
                 <h1>Welcome to America's most awarded online library platform</h1>
-                <h2>Your one-stop shop for all your reading needs,<br>Find the Book of you dreams with <span
+                <h2>Your one-stop shop for all your reading needs,<br>Find the Book of your dreams with <span
                         class="purple">Library</span>
                 </h2>
                 <a href="#features">
